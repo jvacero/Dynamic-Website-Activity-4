@@ -1,0 +1,53 @@
+/* profile.css - profile card: cover photo, avatar, display name, bio, admin badge. */
+
+.profile-card {
+    background: var(--stud-white);
+    border: var(--pixel-border);
+    border-radius: 6px;
+    box-shadow: 5px 5px 0 var(--stud-blue-dark);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.profile-cover {
+    height: 90px;
+    background-color: var(--stud-blue);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.profile-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 4px solid var(--stud-white);
+    position: absolute;
+    bottom: -32px;
+    left: 14px;
+    image-rendering: pixelated;
+    background: var(--stud-gray);
+}
+
+.profile-info {
+    padding: 40px 14px 14px 14px;
+}
+
+.profile-info h2 {
+    font-size: 13px;
+    margin: 0 0 4px 0;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.profile-username {
+    font-size: 9px;
+    color: var(--stud-blue-dark);
+    margin: 0 0 6px 0;
+}
+
+.profile-bio {
+    font-size: 10px;
+    line-height: 1.5;
+}

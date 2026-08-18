@@ -1,0 +1,93 @@
+/* dashboard.css - main post feed / status update dashboard. */
+
+.dashboard-wrap {
+    max-width: 640px;
+    margin: 20px auto;
+    padding: 0 12px;
+}
+
+/* --- New post box --- */
+.post-form {
+    background: var(--stud-white);
+    border: var(--pixel-border);
+    border-radius: 6px;
+    box-shadow: 5px 5px 0 var(--stud-blue-dark);
+    padding: 14px;
+    margin-bottom: 20px;
+}
+
+.post-form textarea {
+    width: 100%;
+    min-height: 60px;
+    border: 3px solid var(--stud-blue);
+    border-radius: 4px;
+    padding: 8px;
+    font-family: inherit;
+    font-size: 11px;
+    resize: vertical;
+}
+
+.post-form input[type="file"] {
+    margin-top: 8px;
+    font-size: 10px;
+}
+
+.pixel-btn {
+    background: var(--stud-blue);
+    color: var(--stud-white);
+    border: 3px solid var(--stud-blue-dark);
+    border-radius: 4px;
+    padding: 8px 14px;
+    font-family: inherit;
+    font-size: 11px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 var(--stud-blue-dark);
+    margin-top: 8px;
+}
+
+.pixel-btn:hover { transform: translate(1px, 1px); box-shadow: 2px 2px 0 var(--stud-blue-dark); }
+.pixel-btn.danger { background: #D33; border-color: #900; box-shadow: 3px 3px 0 #900; }
+
+/* --- Individual post card --- */
+.post-card {
+    background: var(--stud-white);
+    border: 3px solid var(--stud-blue-dark);
+    border-radius: 6px;
+    box-shadow: 4px 4px 0 var(--stud-blue-dark);
+    padding: 12px;
+    margin-bottom: 14px;
+}
+
+.post-card .post-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 9px;
+    color: var(--stud-blue-dark);
+    margin-bottom: 6px;
+}
+
+.post-card .post-content {
+    font-size: 11px;
+    line-height: 1.6;
+    word-break: break-word;
+}
+
+.post-card img.post-image {
+    max-width: 100%;
+    margin-top: 8px;
+    border: 3px solid var(--stud-blue);
+    border-radius: 4px;
+    image-rendering: pixelated; /* keeps the retro pixel-art feel on images */
+}
+
+.post-actions {
+    margin-top: 8px;
+    display: flex;
+    gap: 8px;
+}
+
+.post-actions button, .post-actions a {
+    font-size: 9px;
+    padding: 5px 8px;
+}

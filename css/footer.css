@@ -1,0 +1,29 @@
+/* footer.css - bottom site footer, blue/white pixel-stud theme. */
+
+.site-footer {
+    background: var(--stud-blue-dark);
+    color: var(--stud-white);
+    text-align: center;
+    padding: 14px 10px;
+    border-top: var(--pixel-border);
+    margin-top: 30px;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+}
+
+.site-footer .studs-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+/* Decorative row of little pixel studs above the footer text */
+.site-footer .studs-row span {
+    width: 10px;
+    height: 10px;
+    background: var(--stud-blue);
+    border: 2px solid var(--stud-white);
+    border-radius: 50%;
+    display: inline-block;
+}

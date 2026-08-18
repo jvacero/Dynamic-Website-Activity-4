@@ -1,0 +1,64 @@
+/* music_list.css - sidebar YouTube music player widget. */
+
+.music-widget {
+    background: var(--stud-white);
+    border: var(--pixel-border);
+    border-radius: 6px;
+    box-shadow: 4px 4px 0 var(--stud-blue-dark);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.music-widget h3 {
+    font-size: 11px;
+    color: var(--stud-blue-dark);
+    margin: 0 0 8px 0;
+}
+
+.music-widget ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+    max-height: 140px;
+    overflow-y: auto;
+}
+
+.music-widget li {
+    padding: 6px;
+    font-size: 9px;
+    border-bottom: 1px dashed var(--stud-gray);
+    cursor: pointer;
+}
+
+.music-widget li:hover, .music-widget li.playing {
+    background: var(--stud-gray);
+}
+
+.music-controls {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+}
+
+.music-controls button {
+    background: var(--stud-blue);
+    border: 2px solid var(--stud-blue-dark);
+    color: var(--stud-white);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* The actual YouTube iframe is kept off-screen; only the pixel controls
+   above are shown, matching a 2010-era "hidden music player" widget. */
+#yt-player-frame {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+}

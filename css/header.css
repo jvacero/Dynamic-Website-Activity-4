@@ -1,0 +1,89 @@
+/* header.css - base site variables + top navigation bar (Roblox "stud" pixel style). */
+
+:root {
+    --stud-blue: #0075D3;      /* Roblox-ish primary blue */
+    --stud-blue-dark: #00509E;
+    --stud-white: #FFFFFF;
+    --stud-gray: #E4EFFB;      /* pale blue-white background */
+    --pixel-border: 4px solid #00509E;
+    font-family: "Press Start 2P", "Courier New", monospace; /* pixel font fallback */
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    background: repeating-linear-gradient(
+        45deg, var(--stud-gray), var(--stud-gray) 10px, #ffffff 10px, #ffffff 20px
+    ); /* faint pixel-grid backdrop */
+    color: #003463;
+    font-family: "Press Start 2P", "Courier New", monospace;
+    font-size: 12px;
+}
+
+/* --- Top navigation bar (studs = the little circles like Lego/Roblox) --- */
+.site-header {
+    background: var(--stud-blue);
+    border-bottom: var(--pixel-border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0 6px 0 var(--stud-blue-dark); /* hard pixel shadow, no blur */
+}
+
+.site-header .logo {
+    color: var(--stud-white);
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 0 var(--stud-blue-dark);
+}
+
+.site-nav {
+    display: flex;
+    gap: 14px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Each nav "button" looks like a flattened Roblox stud: circle notch + block */
+.site-nav a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--stud-white);
+    color: var(--stud-blue-dark);
+    text-decoration: none;
+    padding: 8px 12px;
+    border: 3px solid var(--stud-blue-dark);
+    border-radius: 4px;
+    box-shadow: 3px 3px 0 var(--stud-blue-dark);
+    transition: transform 0.05s linear;
+}
+
+.site-nav a:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0 var(--stud-blue-dark);
+}
+
+/* The little "stud" circle on top of each nav button, like a Lego/Roblox brick */
+.site-nav a::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--stud-blue);
+    border: 2px solid var(--stud-blue-dark);
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Google Material Icons sizing inside nav buttons/etc */
+.material-icons {
+    font-size: 16px;
+    vertical-align: middle;
+}

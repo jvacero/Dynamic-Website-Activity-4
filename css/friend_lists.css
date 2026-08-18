@@ -1,0 +1,48 @@
+/* friend_lists.css - "search other users" sidebar widget. */
+
+.friends-widget {
+    background: var(--stud-white);
+    border: var(--pixel-border);
+    border-radius: 6px;
+    box-shadow: 4px 4px 0 var(--stud-blue-dark);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.friends-widget h3 {
+    font-size: 11px;
+    color: var(--stud-blue-dark);
+    margin: 0 0 8px 0;
+}
+
+.friends-widget form {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+
+.friends-widget input[type="text"] {
+    flex: 1;
+    border: 2px solid var(--stud-blue);
+    border-radius: 4px;
+    padding: 6px;
+    font-size: 10px;
+    font-family: inherit;
+}
+
+.friend-result {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px;
+    font-size: 9px;
+    border-bottom: 1px dashed var(--stud-gray);
+}
+
+.friend-result img.avatar-tiny {
+    width: 24px;
+    height: 24px;
+    border: 2px solid var(--stud-blue-dark);
+    border-radius: 50%;
+    image-rendering: pixelated;
+}
