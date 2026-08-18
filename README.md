@@ -1,6 +1,8 @@
-# Dynamic_Website_Act4
+# Dynamic Website Activity 4
 
-A 2010-era social dashboard site, styled like a **Roblox pixel/stud** UI (chunky
+![Dynamic Website Acero(images/Screenshot%20from%202026-08-18%2020-43-43.png)]
+
+A 2010-era social dashboard site, styled like a **Pixel/Stud** UI (chunky
 blue-and-white pixel blocks, hard drop shadows, retro pixel font) built with
 plain PHP + MySQLi + vanilla JS/CSS. Users can post blocky text/image status
 updates, browse a music widget, search for other users, and admins get a
@@ -169,15 +171,3 @@ index.php  ------------------------
    v
 config/logout.php  -->  back to login.php
 ```
-
----
-
-## 8. Notes / Limitations (demo scope)
-
-- The music playlist is a small hardcoded list of YouTube video IDs rather
-  than pulled from the YouTube Data API, to avoid requiring an API key for
-  this demo.
-- `friends` table exists for future "add friend" functionality; the current
-  `friend_lists.php` widget implements the required **search** feature only.
-- Default avatar/cover images are simple generated pixel-art placeholders in
-  `assets/img/`; swap them for real art assets as desired.

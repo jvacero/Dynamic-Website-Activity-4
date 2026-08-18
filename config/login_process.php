@@ -44,7 +44,7 @@ if ($user && password_verify($password, $user['password_hash'])) {
         set_remember_cookie($user['username']);
     }
 
-    header('Location: index.php');
+    header('Location: /../Dynamic-Website-Activity-4/index.php');
     exit;
 }
 
