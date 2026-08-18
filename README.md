@@ -1,6 +1,6 @@
 # Dynamic Website Activity 4
 
-![Dynamic Website Acero(https://github.com/jvacero/master/blob/Dynamic-Website-Activity-4/images/image1.png)]
+![alt text](https://github.com/jvacero/master/blob/Dynamic-Website-Activity-4/images/image1.png)
 
 A 2010-era social dashboard site, styled like a **Pixel/Stud** UI (chunky
 blue-and-white pixel blocks, hard drop shadows, retro pixel font) built with
